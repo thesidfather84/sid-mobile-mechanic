@@ -18,6 +18,9 @@ export type Project = {
   /** Path inside /public, e.g. "projects/bidwrenx-homepage.webp" */
   screenshot: string;
   screenshotAlt: string;
+  /** Intrinsic pixel size of the screenshot file (keeps layout stable). */
+  screenshotWidth: number;
+  screenshotHeight: number;
 };
 
 export const projectsIntro =
@@ -32,7 +35,10 @@ export const projects: Project[] = [
     status: "In Development",
     url: null, // TODO: set the live BIDWRENX URL, e.g. "https://bidwrenx.com"
     screenshot: "projects/bidwrenx-homepage.webp",
-    screenshotAlt: "Screenshot of the BIDWRENX homepage",
+    screenshotAlt:
+      "BIDWRENX homepage — post your repair and let local mechanics bid for your job",
+    screenshotWidth: 1823,
+    screenshotHeight: 892,
   },
   {
     name: "HoundMoto",
@@ -41,7 +47,10 @@ export const projects: Project[] = [
       "HoundMoto is an automotive brand focused on building useful digital experiences for vehicle owners, enthusiasts, and automotive professionals.",
     status: "In Development",
     url: null, // TODO: set the live HoundMoto URL, e.g. "https://houndmoto.com"
-    screenshot: "projects/houndmoto-homepage.webp",
-    screenshotAlt: "Screenshot of the HoundMoto homepage",
+    screenshot: "projects/houndmoto-homepage.png",
+    screenshotAlt:
+      "HoundMoto homepage — one search bar for auto specs, fluids, tires, parts, and trouble codes",
+    screenshotWidth: 1857,
+    screenshotHeight: 1076,
   },
 ];

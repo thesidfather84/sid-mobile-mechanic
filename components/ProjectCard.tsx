@@ -28,8 +28,9 @@ function ScreenshotFrame({ project }: { project: Project }) {
         <Image
           src={`/${project.screenshot}`}
           alt={project.screenshotAlt}
-          width={1280}
-          height={800}
+          width={project.screenshotWidth}
+          height={project.screenshotHeight}
+          sizes="(min-width: 1024px) 540px, 100vw"
           loading="lazy"
           className="h-auto w-full"
         />

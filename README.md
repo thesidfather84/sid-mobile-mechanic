@@ -20,19 +20,23 @@ npm start
 
 ## 2. Replace the BIDWRENX screenshot
 
-1. Take a screenshot of the BIDWRENX homepage (roughly 1280×800 or larger, 16:10 works best).
-2. Save it as WebP (or convert it) and place it at:
-   ```
-   public/projects/bidwrenx-homepage.webp
-   ```
-3. Rebuild/redeploy. The placeholder panel is replaced automatically — no code changes needed.
+The current screenshot lives at:
+
+```
+public/projects/bidwrenx-homepage.webp
+```
+
+To update it, overwrite that file with a new screenshot and set
+`screenshotWidth` / `screenshotHeight` in `data/projects.ts` to the new
+image's pixel size (this keeps the layout stable while the image loads).
+If you use a different filename, update `screenshot` there too.
 
 ## 3. Replace the HoundMoto screenshot
 
 Same as above, at:
 
 ```
-public/projects/houndmoto-homepage.webp
+public/projects/houndmoto-homepage.png
 ```
 
 ## 4. Replace the founder photo
