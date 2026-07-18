@@ -21,7 +21,7 @@ function ScreenshotFrame({ project }: { project: Project }) {
           <span className="h-2.5 w-2.5 rounded-full bg-slate-600" />
         </span>
         <span className="ml-2 truncate rounded bg-ink px-3 py-1 text-xs text-slate-400">
-          {project.url ?? `${project.name.toLowerCase()} — live URL coming soon`}
+          {project.url}
         </span>
       </div>
       {hasScreenshot ? (
@@ -67,21 +67,14 @@ export function ProjectCard({ project }: { project: Project }) {
         {project.description}
       </p>
       <div className="mt-6">
-        {project.url ? (
-          <a
-            href={project.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block rounded-md bg-accent px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-accent-bright"
-          >
-            Visit {project.name}
-          </a>
-        ) : (
-          <p className="inline-block rounded-md border border-line px-5 py-3 text-sm font-medium text-slate-400">
-            Live link coming soon — set the URL in{" "}
-            <code className="text-slate-300">data/projects.ts</code>
-          </p>
-        )}
+        <a
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block rounded-md bg-accent px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-accent-bright"
+        >
+          Visit Website
+        </a>
       </div>
     </article>
   );

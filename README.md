@@ -41,21 +41,27 @@ public/projects/houndmoto-homepage.png
 
 ## 4. Replace the founder photo
 
-Place a portrait (roughly 560×640, WebP preferred) at:
+Overwrite the portrait at:
 
 ```
-public/founder/sidney-impastato.webp
+public/founder/sidney-impastato.png
 ```
 
-The placeholder is replaced automatically on the next build.
+If the new image has a different pixel size, update the `width`/`height`
+props in `components/Founder.tsx` to match.
 
 ## 5. Update contact details
 
 All contact details live in one file: **`data/contact.ts`**
 
-- `email` — powers the contact form and the displayed address.
+- `email` — the business inbox shown on the site (currently bigsid84@gmail.com).
 - `phone` — set a string to display it, or leave `null` to show "Available on request".
-- `formEndpoint` — the form opens the visitor's email app (mailto) by default. To use a real backend later, create a form at [Formspree](https://formspree.io) (or a Vercel serverless function / Resend) and set this to the endpoint URL. The form will then POST there instead.
+- `formEndpoint` — the contact form POSTs submissions here. To activate real
+  delivery: sign up at [Formspree](https://formspree.io) with the business
+  email, create a form, and paste the endpoint (e.g.
+  `https://formspree.io/f/abcdwxyz`) into this field, then redeploy. While it
+  is `null`, the form falls back to opening the visitor's email app addressed
+  to `email`, so inquiries still arrive.
 
 Other editable content lives alongside it in `data/`:
 
@@ -76,7 +82,7 @@ Edit **`data/projects.ts`** and set the `url` field for each project:
 url: "https://bidwrenx.com",
 ```
 
-While `url` is `null`, the card shows a "live link coming soon" note instead of a button.
+Each card's "Visit Website" button opens this URL in a new tab.
 
 ## 7. Push the repository to GitHub
 
