@@ -21,7 +21,7 @@ export const contact = {
   location: "Louisiana, United States",
   email: "contact@sidmobilemechanic.net",
   phone: null as string | null, // TODO: e.g. "(504) 555-0100"
-  formEndpoint: null as string | null, // TODO: "https://formspree.io/f/YOUR_FORM_ID"
+  formEndpoint: "https://formspree.io/f/xpqvdabl" as string | null,
 };
 
 export const inquiryTypes = [
