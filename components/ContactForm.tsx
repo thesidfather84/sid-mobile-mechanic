@@ -6,33 +6,45 @@ import { contact, inquiryTypes } from "@/data/contact";
 const inputClasses =
   "w-full rounded-md border border-line bg-ink px-4 py-3 text-slate-100 placeholder:text-slate-500 focus:border-accent-bright";
 
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 /**
- * Simple static-site contact form.
+ * Contact form for a static site.
  *
- * Default behavior: builds a mailto link from the fields and opens the
- * visitor's email app addressed to `contact.email` (data/contact.ts).
- *
- * Future backend: set `contact.formEndpoint` in data/contact.ts to a
- * Formspree endpoint (or your own API route) and the form will POST
- * there instead — no component changes needed.
+ * Submissions POST to `contact.formEndpoint` (a Formspree endpoint —
+ * see data/contact.ts for setup steps). While no endpoint is configured,
+ * the form falls back to opening the visitor's email app addressed to
+ * `contact.email` so inquiries still arrive.
  */
 export function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle",
   );
+  const [emailError, setEmailError] = useState<string | null>(null);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
     const data = new FormData(form);
-    const name = String(data.get("name") ?? "");
-    const email = String(data.get("email") ?? "");
-    const phone = String(data.get("phone") ?? "");
+    const name = String(data.get("name") ?? "").trim();
+    const email = String(data.get("email") ?? "").trim();
+    const phone = String(data.get("phone") ?? "").trim();
     const inquiry = String(data.get("inquiry") ?? "");
-    const message = String(data.get("message") ?? "");
+    const message = String(data.get("message") ?? "").trim();
+
+    if (!email) {
+      setEmailError("Please enter your email address so we can reply.");
+      return;
+    }
+    if (!EMAIL_PATTERN.test(email)) {
+      setEmailError(
+        "That email address doesn't look valid — please check it and try again.",
+      );
+      return;
+    }
+    setEmailError(null);
 
     if (contact.formEndpoint) {
-      // POST to the configured backend (e.g. Formspree)
       setStatus("sending");
       try {
         const response = await fetch(contact.formEndpoint, {
@@ -40,7 +52,9 @@ export function ContactForm() {
           headers: { Accept: "application/json" },
           body: data,
         });
-        if (!response.ok) throw new Error(`Form endpoint returned ${response.status}`);
+        if (!response.ok) {
+          throw new Error(`Form endpoint returned ${response.status}`);
+        }
         setStatus("sent");
         form.reset();
       } catch {
@@ -49,7 +63,8 @@ export function ContactForm() {
       return;
     }
 
-    // Default: open the visitor's email app with the message pre-filled
+    // Fallback while no form endpoint is configured: open the visitor's
+    // email app addressed to the business inbox.
     const subject = `[${inquiry}] Website inquiry from ${name}`;
     const body = [
       `Name: ${name}`,
@@ -92,8 +107,20 @@ export function ContactForm() {
             type="email"
             required
             autoComplete="email"
+            aria-invalid={emailError ? true : undefined}
+            aria-describedby={emailError ? "contact-email-error" : undefined}
+            onChange={() => setEmailError(null)}
             className={inputClasses}
           />
+          {emailError ? (
+            <p
+              id="contact-email-error"
+              className="mt-1.5 text-sm font-medium text-red-400"
+              role="alert"
+            >
+              {emailError}
+            </p>
+          ) : null}
         </div>
       </div>
       <div className="grid gap-5 sm:grid-cols-2">
@@ -142,19 +169,21 @@ export function ContactForm() {
         >
           {status === "sending" ? "Sending…" : "Send Message"}
         </button>
-        {!contact.formEndpoint ? (
+        {status === "idle" || status === "sending" ? (
           <p className="text-sm text-slate-500">
-            Submitting opens your email app with the message pre-filled.
+            We&rsquo;ll reply to the email address you provide.
           </p>
         ) : null}
         {status === "sent" ? (
           <p className="text-sm font-medium text-accent-bright" role="status">
-            Message sent — thank you.
+            Message sent — thank you. We&rsquo;ll reply to the email address you
+            provided.
           </p>
         ) : null}
         {status === "error" ? (
           <p className="text-sm font-medium text-red-400" role="alert">
-            Something went wrong. Please email us directly at {contact.email}.
+            Something went wrong sending your message. Please email us directly
+            at {contact.email}.
           </p>
         ) : null}
       </div>

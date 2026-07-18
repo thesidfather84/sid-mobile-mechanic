@@ -1,24 +1,26 @@
 /**
  * All editable contact details live here.
  *
- * - `email` powers the contact form (mailto) and the displayed email address.
+ * - `email` is the business inbox: shown on the site, used as the mailto
+ *   fallback target, and where form submissions should be delivered.
  * - `phone` is optional: set it to a string like "(504) 555-0100" to display it,
  *   or leave it null to show "Available on request".
- * - `formEndpoint` is a documented placeholder for a future backend form:
- *   if you later create a Formspree form (https://formspree.io) or your own
- *   API route, set the endpoint URL here and the form will POST to it
- *   instead of opening the visitor's email app.
+ * - `formEndpoint` — the contact form POSTs submissions here (Formspree).
+ *
+ *   TO ACTIVATE REAL FORM DELIVERY:
+ *   1. Sign up at https://formspree.io with bigsid84@gmail.com
+ *   2. Create a new form; Formspree gives you an endpoint like
+ *      "https://formspree.io/f/abcdwxyz"
+ *   3. Paste that endpoint below and redeploy.
+ *
+ *   Until an endpoint is set (null), the form falls back to opening the
+ *   visitor's email app addressed to `email`, so no inquiry is lost.
  */
 export const contact = {
   location: "Louisiana, United States",
-  email: "contact@sidmobilemechanic.net", // TODO: replace with the real inbox
+  email: "bigsid84@gmail.com",
   phone: null as string | null, // TODO: e.g. "(504) 555-0100"
-  /**
-   * Optional future form backend (Formspree / Resend / Vercel function).
-   * Example: "https://formspree.io/f/your-form-id"
-   * Leave null to use the built-in mailto behavior.
-   */
-  formEndpoint: null as string | null,
+  formEndpoint: null as string | null, // TODO: "https://formspree.io/f/YOUR_FORM_ID"
 };
 
 export const inquiryTypes = [
