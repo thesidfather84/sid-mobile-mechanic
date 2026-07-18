@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette — dark charcoal base with an automotive blue accent */
+  --color-ink: #0d1117;
+  --color-ink-soft: #131a22;
+  --color-panel: #182029;
+  --color-line: #263140;
+  --color-accent: #1f6feb;
+  --color-accent-bright: #58a6ff;
+  --color-paper: #ffffff;
+  --color-paper-soft: #f4f6f8;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Anchor targets clear the sticky header */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+/* Visible, consistent focus for keyboard users */
+:focus-visible {
+  outline: 2px solid var(--color-accent-bright);
+  outline-offset: 2px;
+}
+
+/* Subtle one-time hero entrance */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-rise {
+  animation: rise-in 0.7s ease-out both;
+}
+
+.animate-rise-delayed {
+  animation: rise-in 0.7s ease-out 0.15s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-rise,
+  .animate-rise-delayed {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
