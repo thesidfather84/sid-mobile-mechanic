@@ -12,8 +12,8 @@ export const company = {
   founder: {
     name: "Sidney Impastato",
     role: "Founder and Sole Owner",
-    // Replace this photo: drop a real image at public/founder/sidney-impastato.webp
-    photo: "founder/sidney-impastato.webp",
+    // To change this photo, overwrite the file at public/founder/sidney-impastato.png
+    photo: "founder/sidney-impastato.png",
     photoAlt: "Portrait of Sidney Impastato, founder and sole owner of Sid Mobile Mechanic LLC",
     bio: [
       "Sidney Impastato brings experience across automotive repair operations, automotive parts, dealership sales, commercial sales, customer support, technology, and business development.",

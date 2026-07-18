@@ -17,8 +17,9 @@ export function Founder() {
               <Image
                 src={`/${founder.photo}`}
                 alt={founder.photoAlt}
-                width={560}
-                height={640}
+                width={1122}
+                height={1402}
+                sizes="(min-width: 1024px) 280px, 100vw"
                 loading="lazy"
                 className="h-auto w-full object-cover"
               />
