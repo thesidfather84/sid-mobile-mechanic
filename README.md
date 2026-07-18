@@ -54,7 +54,7 @@ props in `components/Founder.tsx` to match.
 
 All contact details live in one file: **`data/contact.ts`**
 
-- `email` — the business inbox shown on the site (currently bigsid84@gmail.com).
+- `email` — the official business inbox shown on the site: contact@sidmobilemechanic.net.
 - `phone` — set a string to display it, or leave `null` to show "Available on request".
 - `formEndpoint` — the contact form POSTs submissions here. To activate real
   delivery: sign up at [Formspree](https://formspree.io) with the business
