@@ -25,6 +25,26 @@ export default function ShopPage() {
             </a>
           </div>
         </section>
+        <section aria-labelledby="fitment-title" className="border-b border-line bg-ink-soft">
+          <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-6 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
+            <div>
+              <h2 id="fitment-title" className="text-xl font-bold text-white">Find What Fits Your Vehicle</h2>
+              <p className="mt-1 max-w-xl text-sm leading-relaxed text-slate-300">
+                Enter your year, make, model and factory audio options in a free fit guide. Check speaker sizes and locations, radio fit, dash kits and wiring adapters.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <a href="https://www.crutchfield.com/car/carselector.aspx" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center rounded-md border border-line px-4 text-sm font-semibold text-white hover:border-sky-300">
+                Speaker &amp; Radio Fit
+                <span className="sr-only"> on Crutchfield (opens in a new tab)</span>
+              </a>
+              <a href="https://www.metraonline.com/vehicle-fit-guide" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center rounded-md border border-line px-4 text-sm font-semibold text-white hover:border-sky-300">
+                Dash Kits &amp; Adapters
+                <span className="sr-only"> on Metra (opens in a new tab)</span>
+              </a>
+            </div>
+          </div>
+        </section>
         <ShopCatalog />
       </main>
       <footer className="border-t border-line">
