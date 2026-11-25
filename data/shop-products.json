@@ -11,7 +11,7 @@
       "Bluetooth",
       "USB and SD"
     ],
-    "image": null,
+    "image": "/shop/products/smm-1001.webp",
     "retailPrice": null,
     "availability": "Confirm by phone"
   },
@@ -27,7 +27,7 @@
       "Bluetooth",
       "USB and SD"
     ],
-    "image": null,
+    "image": "/shop/products/smm-1002.webp",
     "retailPrice": null,
     "availability": "Confirm by phone"
   },
@@ -43,7 +43,7 @@
       "Bluetooth",
       "AM/FM"
     ],
-    "image": null,
+    "image": "/shop/products/smm-1003.webp",
     "retailPrice": null,
     "availability": "Confirm by phone"
   },
@@ -59,7 +59,7 @@
       "Apple CarPlay and Android Auto",
       "Bluetooth"
     ],
-    "image": null,
+    "image": "/shop/products/smm-1004.webp",
     "retailPrice": null,
     "availability": "Confirm by phone"
   },
@@ -75,7 +75,7 @@
       "MirrorLink",
       "Bluetooth"
     ],
-    "image": null,
+    "image": "/shop/products/smm-1005.webp",
     "retailPrice": null,
     "availability": "Confirm by phone"
   },
@@ -91,7 +91,7 @@
       "Bluetooth",
       "USB and SD"
     ],
-    "image": null,
+    "image": "/shop/products/smm-1006.webp",
     "retailPrice": null,
     "availability": "Confirm by phone"
   },
@@ -107,7 +107,7 @@
       "Single-DIN chassis",
       "Wireless Apple CarPlay and Android Auto"
     ],
-    "image": null,
+    "image": "/shop/products/smm-1007.webp",
     "retailPrice": null,
     "availability": "Confirm by phone"
   },
@@ -123,7 +123,7 @@
       "Single-DIN chassis",
       "Wireless Apple CarPlay and Android Auto"
     ],
-    "image": null,
+    "image": "/shop/products/smm-1008.webp",
     "retailPrice": null,
     "availability": "Confirm by phone"
   },
@@ -139,7 +139,7 @@
       "Double-DIN chassis",
       "Apple CarPlay and Android Auto"
     ],
-    "image": null,
+    "image": "/shop/products/smm-1009.webp",
     "retailPrice": null,
     "availability": "Confirm by phone"
   },
@@ -155,7 +155,7 @@
       "2-way",
       "100W RMS"
     ],
-    "image": null,
+    "image": "/shop/products/smm-1010.webp",
     "retailPrice": null,
     "availability": "Confirm by phone"
   },
@@ -171,7 +171,7 @@
       "2-way",
       "300W max"
     ],
-    "image": null,
+    "image": "/shop/products/smm-1011.webp",
     "retailPrice": null,
     "availability": "Confirm by phone"
   },
@@ -187,7 +187,7 @@
       "4 ohms",
       "100W RMS"
     ],
-    "image": null,
+    "image": "/shop/products/smm-1012.webp",
     "retailPrice": null,
     "availability": "Confirm by phone"
   },
@@ -203,7 +203,7 @@
       "250W RMS",
       "500W max"
     ],
-    "image": null,
+    "image": "/shop/products/smm-1013.webp",
     "retailPrice": null,
     "availability": "Confirm by phone"
   },
@@ -219,7 +219,7 @@
       "Dual 4-ohm voice coils",
       "900W RMS"
     ],
-    "image": null,
+    "image": "/shop/products/smm-1014.webp",
     "retailPrice": null,
     "availability": "Confirm by phone"
   },
@@ -235,7 +235,69 @@
       "Class D",
       "1,600W max"
     ],
-    "image": null,
+    "image": "/shop/products/smm-1015.webp",
+    "retailPrice": null,
+    "availability": "Confirm by phone"
+  },
+  {
+    "sku": "SMM-1016",
+    "brand": "Audiopipe",
+    "model": "APLX1400.4",
+    "name": "4-Channel Amplifier",
+    "category": "Amplifiers",
+    "description": "Power four speakers from a single amplifier.",
+    "specifications": [
+      "4 channels",
+      "60 W RMS × 4 at 4 Ω",
+      "90 W RMS × 4 at 2 Ω"
+    ],
+    "image": "/shop/products/smm-1016.webp",
+    "retailPrice": null,
+    "availability": "Confirm by phone"
+  },
+  {
+    "sku": "SMM-1017",
+    "brand": "Blaupunkt",
+    "model": "BPA-E602",
+    "name": "E Series 2-Channel Amplifier",
+    "category": "Amplifiers",
+    "description": "Drive a pair of compatible speakers, or bridge the two channels for one compatible load.",
+    "specifications": [
+      "2 channels",
+      "60 W RMS × 2 at 4 Ω",
+      "180 W RMS bridged at 4 Ω"
+    ],
+    "image": "/shop/products/smm-1017.webp",
+    "retailPrice": null,
+    "availability": "Confirm by phone"
+  },
+  {
+    "sku": "SMM-1018",
+    "brand": "Audiopipe",
+    "model": "PK2100CPR",
+    "name": "4-Gauge Copper Amp Wiring Kit",
+    "category": "Wiring Kits",
+    "description": "A 4-gauge copper wiring kit for a compatible amplifier installation.",
+    "specifications": [
+      "4 gauge",
+      "100% copper"
+    ],
+    "image": "/shop/products/smm-1018.webp",
+    "retailPrice": null,
+    "availability": "Confirm by phone"
+  },
+  {
+    "sku": "SMM-1019",
+    "brand": "Audiopipe",
+    "model": "PK1500SX",
+    "name": "8-Gauge Amp Wiring Kit",
+    "category": "Wiring Kits",
+    "description": "An 8-gauge wiring kit for a compatible amplifier installation.",
+    "specifications": [
+      "8 gauge",
+      "Amplifier installation kit"
+    ],
+    "image": "/shop/products/smm-1019.webp",
     "retailPrice": null,
     "availability": "Confirm by phone"
   }
