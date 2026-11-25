@@ -10,6 +10,7 @@ export const navLinks: NavLink[] = [
   { label: "Home", href: "#top" },
   { label: "Automotive Services", href: "#services" },
   { label: "Our Companies", href: "#companies" },
+  { label: "SHOP", href: "/shop" },
   { label: "Investment", href: "#investment" },
   { label: "Contact", href: "#contact" },
 ];

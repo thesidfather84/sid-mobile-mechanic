@@ -3,14 +3,14 @@
 import { useState } from "react";
 import { navLinks } from "@/data/navigation";
 
-export function Header() {
+export function Header({ sectionPath = "" }: { sectionPath?: string }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-ink/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <a
-          href="#top"
+          href={sectionPath + "#top"}
           className="flex items-baseline gap-2 text-white"
           onClick={() => setMenuOpen(false)}
         >
@@ -25,14 +25,15 @@ export function Header() {
           {navLinks.map((link) => (
             <a
               key={link.href}
-              href={link.href}
+              href={link.href.startsWith("#") ? sectionPath + link.href : link.href}
+              aria-current={link.href === "/shop" && sectionPath ? "page" : undefined}
               className="rounded-md px-3 py-2 text-sm font-medium text-slate-300 transition-colors hover:text-white"
             >
               {link.label}
             </a>
           ))}
           <a
-            href="#contact"
+            href={sectionPath + "#contact"}
             className="ml-3 rounded-md bg-accent px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-accent-bright"
           >
             Contact Us
@@ -75,7 +76,8 @@ export function Header() {
           {navLinks.map((link) => (
             <a
               key={link.href}
-              href={link.href}
+              href={link.href.startsWith("#") ? sectionPath + link.href : link.href}
+              aria-current={link.href === "/shop" && sectionPath ? "page" : undefined}
               className="block rounded-md px-3 py-3 text-base font-medium text-slate-200 hover:bg-ink-soft hover:text-white"
               onClick={() => setMenuOpen(false)}
             >
@@ -83,7 +85,7 @@ export function Header() {
             </a>
           ))}
           <a
-            href="#contact"
+            href={sectionPath + "#contact"}
             className="mt-2 block rounded-md bg-accent px-4 py-3 text-center text-base font-semibold text-white hover:bg-accent-bright"
             onClick={() => setMenuOpen(false)}
           >

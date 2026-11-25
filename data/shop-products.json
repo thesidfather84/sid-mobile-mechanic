@@ -1,0 +1,242 @@
+[
+  {
+    "sku": "SMM-1001",
+    "brand": "Blaupunkt",
+    "model": "DAYTONA 140",
+    "name": "Bluetooth Digital Media Radio",
+    "category": "Single-DIN Radios",
+    "description": "Stream music or take hands-free calls through a detachable-face radio.",
+    "specifications": [
+      "AM/FM",
+      "Bluetooth",
+      "USB and SD"
+    ],
+    "image": null,
+    "retailPrice": null,
+    "availability": "Confirm by phone"
+  },
+  {
+    "sku": "SMM-1002",
+    "brand": "Blaupunkt",
+    "model": "BEVERLY HILLS 160",
+    "name": "Bluetooth DVD/CD Radio",
+    "category": "Single-DIN Radios",
+    "description": "Play discs or connect your phone through this detachable-face receiver.",
+    "specifications": [
+      "DVD/CD",
+      "Bluetooth",
+      "USB and SD"
+    ],
+    "image": null,
+    "retailPrice": null,
+    "availability": "Confirm by phone"
+  },
+  {
+    "sku": "SMM-1003",
+    "brand": "AudioDrift",
+    "model": "KPD-1935BT",
+    "name": "Bluetooth CD Radio",
+    "category": "Single-DIN Radios",
+    "description": "Keep your CDs in rotation with a fixed-face stereo that also streams audio.",
+    "specifications": [
+      "CD",
+      "Bluetooth",
+      "AM/FM"
+    ],
+    "image": null,
+    "retailPrice": null,
+    "availability": "Confirm by phone"
+  },
+  {
+    "sku": "SMM-1004",
+    "brand": "Blaupunkt",
+    "model": "BP799",
+    "name": "7-inch Double-DIN Receiver",
+    "category": "Double-DIN Radios",
+    "description": "A dash-mounted receiver with phone integration and a rear camera input.",
+    "specifications": [
+      "7-inch screen",
+      "Apple CarPlay and Android Auto",
+      "Bluetooth"
+    ],
+    "image": null,
+    "retailPrice": null,
+    "availability": "Confirm by phone"
+  },
+  {
+    "sku": "SMM-1005",
+    "brand": "Blaupunkt",
+    "model": "BP800PLAY",
+    "name": "7-inch Fixed-Face Receiver",
+    "category": "Double-DIN Radios",
+    "description": "A fixed-face touchscreen stereo with phone mirroring and a remote.",
+    "specifications": [
+      "7-inch screen",
+      "MirrorLink",
+      "Bluetooth"
+    ],
+    "image": null,
+    "retailPrice": null,
+    "availability": "Confirm by phone"
+  },
+  {
+    "sku": "SMM-1006",
+    "brand": "Blaupunkt",
+    "model": "CAMDEN 450",
+    "name": "6.95-inch Bluetooth Receiver",
+    "category": "Double-DIN Radios",
+    "description": "A fixed-face stereo with touchscreen controls and front media inputs.",
+    "specifications": [
+      "6.95-inch screen",
+      "Bluetooth",
+      "USB and SD"
+    ],
+    "image": null,
+    "retailPrice": null,
+    "availability": "Confirm by phone"
+  },
+  {
+    "sku": "SMM-1007",
+    "brand": "Blaupunkt",
+    "model": "LAS VEGAS 910",
+    "name": "10.1-inch Multimedia Receiver",
+    "category": "Touchscreen Multimedia",
+    "description": "A large-screen receiver with wireless phone integration.",
+    "specifications": [
+      "10.1-inch screen",
+      "Single-DIN chassis",
+      "Wireless Apple CarPlay and Android Auto"
+    ],
+    "image": null,
+    "retailPrice": null,
+    "availability": "Confirm by phone"
+  },
+  {
+    "sku": "SMM-1008",
+    "brand": "Blaupunkt",
+    "model": "CANCUN 990",
+    "name": "9-inch Multimedia Receiver",
+    "category": "Touchscreen Multimedia",
+    "description": "A 9-inch display paired with a single-DIN chassis and wireless phone integration.",
+    "specifications": [
+      "9-inch screen",
+      "Single-DIN chassis",
+      "Wireless Apple CarPlay and Android Auto"
+    ],
+    "image": null,
+    "retailPrice": null,
+    "availability": "Confirm by phone"
+  },
+  {
+    "sku": "SMM-1009",
+    "brand": "Blaupunkt",
+    "model": "MONTE CARLO 750",
+    "name": "6.75-inch Multimedia Receiver",
+    "category": "Touchscreen Multimedia",
+    "description": "An in-dash touchscreen for phone integration and Bluetooth audio.",
+    "specifications": [
+      "6.75-inch screen",
+      "Double-DIN chassis",
+      "Apple CarPlay and Android Auto"
+    ],
+    "image": null,
+    "retailPrice": null,
+    "availability": "Confirm by phone"
+  },
+  {
+    "sku": "SMM-1010",
+    "brand": "Audiopipe",
+    "model": "CSL1502R",
+    "name": "5.25-inch 2-Way Speaker Pair",
+    "category": "Speakers",
+    "description": "A pair of 5.25-inch speakers for compatible factory openings.",
+    "specifications": [
+      "5.25 inches",
+      "2-way",
+      "100W RMS"
+    ],
+    "image": null,
+    "retailPrice": null,
+    "availability": "Confirm by phone"
+  },
+  {
+    "sku": "SMM-1011",
+    "brand": "Audiopipe",
+    "model": "CSE-1602T",
+    "name": "6.5-inch 2-Way Speaker Pair",
+    "category": "Speakers",
+    "description": "A pair of coaxial car speakers for compatible 6.5-inch openings.",
+    "specifications": [
+      "6.5 inches",
+      "2-way",
+      "300W max"
+    ],
+    "image": null,
+    "retailPrice": null,
+    "availability": "Confirm by phone"
+  },
+  {
+    "sku": "SMM-1012",
+    "brand": "Alphasonik",
+    "model": "AS29",
+    "name": "6×9-inch 3-Way Speaker Pair",
+    "category": "Speakers",
+    "description": "A pair of oval speakers with grilles and mounting hardware included.",
+    "specifications": [
+      "6×9 inches",
+      "4 ohms",
+      "100W RMS"
+    ],
+    "image": null,
+    "retailPrice": null,
+    "availability": "Confirm by phone"
+  },
+  {
+    "sku": "SMM-1013",
+    "brand": "Audiopipe",
+    "model": "APLP-1030",
+    "name": "10-inch Powered Subwoofer",
+    "category": "Subwoofers",
+    "description": "A low-profile powered subwoofer with an integrated amplifier.",
+    "specifications": [
+      "10 inches",
+      "250W RMS",
+      "500W max"
+    ],
+    "image": null,
+    "retailPrice": null,
+    "availability": "Confirm by phone"
+  },
+  {
+    "sku": "SMM-1014",
+    "brand": "Audiopipe",
+    "model": "TXX-BDC-III-12",
+    "name": "12-inch Dual Voice Coil Subwoofer",
+    "category": "Subwoofers",
+    "description": "A 12-inch driver for a compatible enclosure and amplifier.",
+    "specifications": [
+      "12 inches",
+      "Dual 4-ohm voice coils",
+      "900W RMS"
+    ],
+    "image": null,
+    "retailPrice": null,
+    "availability": "Confirm by phone"
+  },
+  {
+    "sku": "SMM-1015",
+    "brand": "Audiopipe",
+    "model": "APDLO-16001D",
+    "name": "Class D Monoblock Amplifier",
+    "category": "Amplifiers",
+    "description": "A single-channel amplifier for a compatible subwoofer setup.",
+    "specifications": [
+      "Monoblock",
+      "Class D",
+      "1,600W max"
+    ],
+    "image": null,
+    "retailPrice": null,
+    "availability": "Confirm by phone"
+  }
+]
